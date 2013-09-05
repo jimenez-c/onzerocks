@@ -1,0 +1,16 @@
+<h1>Lorem ipsum dolor sit amet</h1>
+<!-- Div that contains player. -->
+<div id="player">
+    <h1>No flash player!</h1>
+    <p>It looks like you don't have flash player installed. <a href="http://www.macromedia.com/go/getflashplayer" >Click here</a> to go to Macromedia download page.</p>
+</div>
+
+<!-- Script that embeds player. -->
+<script language="javascript" type="text/javascript">
+    var so = new SWFObject("player/flashmp3player.swf", "player", "600", "40", "9"); // Location of swf file. You can change player width and height here (using pixels or percents).
+    so.addParam("quality","high");
+    so.addVariable("content_path","mp3"); // Location of a folder with mp3 files (relative to php script).
+    so.addVariable("color_path","player/default.xml"); // Location of xml file with color settings.
+    so.addVariable("script_path","player/flashmp3player.php"); // Location of php script.
+    so.write("player");
+</script> 

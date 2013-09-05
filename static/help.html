@@ -1,0 +1,37 @@
+<h2>Comment mettre une émission en ligne ?</h2> 
+<div class="even" id="help">
+
+<div id="myElement">Loading the player...</div>
+
+<script type="text/javascript">
+    jwplayer("myElement").setup({        
+        file: "store/help.flv"        
+    });
+</script>
+<ol>
+    <li><a href="store/FileZilla_3.6.0.2_win32-setup.exe">Télécharger FileZilla</a></li>
+    <li>Installez et lancez FileZilla <span class="joke">(sans blague... je croyais que c'était pour décorer mon bureau)</span></li>
+    <li>Vous devez arriver sur la <a rel="lightbox" href="store/fzMainPage.png">page de démarrage du logiciel</a>. Dans la fenêtre de gauche,
+    vous voyez les fichiers présents sur votre ordinateur, et à droite, les fichiers présents sur le serveur (quand vous serez connecté).</li>
+    <li>Cliquez sur le "Gestionnaire de Sites". Cliquez sur "Nouveau Site", appelez le par exemple "onzerocks" et remplissez les champs avec 
+    les informations transmises par mail.<a href="store/fzGestionnaire.png" rel="lightbox">Voir la page.</a></li>
+    <li>Cliquez sur "Connexion". Dans la colonne de droite devrait apparaître l'arborescence du serveur.</li>
+    <li>Dans la colonne de droite (côté serveur), allez dans "www -> onzerocks -> store -> audio".</li>
+    <li>Trouvez le fichier à transférer sur votre ordinateur. Vous pouvez le trouver :
+        <ul>
+            <li>Soit avec FileZilla (dans la colonne de gauche). Dans ce cas, il faudra double cliquer dessus pour le transférer, ou bien
+            le faire glisser de la colonne de gauche vers la colonne de droite.</li>
+            <li>Soit avec votre explorateur de fichier habituel. Dans ce cas, il faut le faire glisser dans la colonne de droite de FileZilla.</li>
+        </ul>                
+    </li>            
+    <li>Une fois le transfert entamé, on peut surveiller sa progression dans la zone de transfert en bas.</li>
+    <li>Quand le transfert est terminé, allez sur le site, connectez vous, allez dans l'onglet "Gérer les émissions", cliquez sur "Ajouter".</li>
+    <li>Le fichier que vous venez de tranférer devrait apparaître. Cliquez dessus puis remplissez le formulaire.</li>
+    <li>Et voilà, l'émission est en ligne !</li>
+</ol>       
+<script type="text/javascript">
+    $(function(){
+        $("#help a[rel=lightbox]").lightBox();
+    });
+</script>
+</div>
